@@ -4,12 +4,12 @@ prompt = require('prompt');
 
 var key = 'b117bf91face5d6a30f4a2d2cd77c249';
 
-prompt.get('whats yo word', function(err, res) {
+prompt.get('what chu want', function(err, res) {
         if (err) {
             console.log('sorry, there was an error');
         }
         else {
-            var word = res.word;
+            var word = res.THISCOULDBEANYTHING;
             var mysteryObject = new SynonymAPI(key);
             mysteryObject.getSynonyms(word, function(err, data) {
                 console.log(data);
